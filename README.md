@@ -51,11 +51,13 @@ To develop a supervised regression model that accurately predicts electricity bi
 
 ---
 
-##  Results
-
-| Model                | RMSE   | R² Score |     
-| Linear Regression    | ~30    | 0.9992   |       
-| Random Forest        | ~17.83 | 0.999720 |      
+##  Results     
+     
+| Model             | RMSE (↓) | R² Score (↑) |
+| ----------------- | -------- | ------------ |
+| Linear Regression | \~30.00  | 0.9992       |
+| Random Forest     | \~17.83  | 0.99972      |
+  
 
 
 ##  Key Takeaways
