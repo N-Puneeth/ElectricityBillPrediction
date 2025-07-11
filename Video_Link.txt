@@ -1,0 +1,38 @@
+
+Demo Video Link:  
+
+\\https://1drv.ms/v/c/2f2f29bf4ecaf9c0/EaDS6OfMiN9CvqUwJzMQJJ4BXbIKsyF7-ngiAXxaso3mGg\\
+
+---
+
+ Demo Video Explanation Script:
+
+   Hello, my name is NEPPALI PUNEETH KUMAR, and this is my submission for the IIITDM Electricity Bill Prediction Challenge.
+
+ Problem Statement:
+  The objective is to predict monthly electricity bills based on appliance usage, monthly usage hours, tariff rate, city, and company.    
+  Accurate predictions can help utility providers forecast usage and detect anomalies.
+
+ Dataset & Feature Engineering:  
+   The dataset includes counts of appliances such as fans, ACs, refrigerators, etc., along with tariff and city/company info. I engineered new features using real-world appliance wattage:
+
+- EstimatedEnergyKWh = (Power × Hours) / 1000
+- EstimatedCost = Energy × Tariff Rate
+- City_Company = Encoded combo of City + Company
+
+These features help the model learn real energy behavior, not just appliance count.
+
+⚙️ Models Used:
+I trained both Linear Regression and Random Forest models.
+
+Results:
+- Linear Regression → RMSE: ~30 | R²: 0.9992
+- Random Forest → RMSE: ~17.8 | R²: 0.9997
+
+The Random Forest Regressor clearly performed better, so I chose it for the final model.
+
+📈 Visualizations like Actual vs Predicted plots and Feature Importance helped interpret results and build confidence in predictions.
+ Conclusion:
+Feature engineering based on real appliance power usage was key to improving accuracy and interpretability. This model could be useful for utility companies or campus energy management systems.
+
+Thank you!
