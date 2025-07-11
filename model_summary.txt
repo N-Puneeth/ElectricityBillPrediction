@@ -1,0 +1,41 @@
+Model: Random Forest Regressor
+
+Summary:
+--------
+A Random Forest regression model was trained to predict monthly electricity bills based on appliance      
+usage, geographic location, and tariff rate. Real-world appliance power ratings were used to engineer    
+meaningful energy consumption features like EstimatedEnergyKWh and EstimatedCost.
+
+Features Used:
+- Fan
+- Refrigerator
+- AirConditioner
+- Television
+- Monitor
+- MotorPump
+- MonthlyHours
+- TariffRate
+- EstimatedEnergyKWh
+- EstimatedCost
+- Month
+- City
+- Company
+- City_Company (engineered)
+
+Feature Importance (Top 5):
+1. EstimatedCost
+2. TariffRate
+3. MonthlyHours
+4. AirConditioner
+5. Refrigerator
+
+Model Results (on Test Set):
+----------------------------
+- RMSE: 17.83153
+- R² Score: 0.99972
+
+Notes:
+------
+- Random Forest was selected due to its superior performance over linear regression.
+- No hyperparameter tuning or cross-validation was applied in the final version due to already high performance.
+- Feature importance plots and visual analysis supported model interpretability.
